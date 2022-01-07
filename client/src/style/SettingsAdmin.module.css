@@ -1,0 +1,42 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.smallBoxesCont {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 110px);
+  width: 30vw;
+}
+
+.newUserBox {
+  height: 50%;
+}
+
+.allUsersBox {
+  width: 70vw;
+  margin-bottom: 40px;
+}
+
+.changePassBox {
+  height: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .smallBoxesCont {
+    width: 100vw;
+    height: fit-content;
+  }
+
+  .allUsersBox {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,65 @@
+.wrapper {
+  margin-top: 40px;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+}
+
+.changePassContainer {
+  width: 50%;
+}
+
+.dietContainer {
+  width: 50%;
+}
+
+.dietText {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.dietBtnCont {
+  text-align: center;
+}
+
+.dietBtn {
+  margin-top: 50px;
+  width: 240px;
+  height: 30px;
+  color: white;
+  background-color: #b63075;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.dietBtn:hover {
+  background-color: white;
+  border: solid #b63075 2px;
+  color: #b63075;
+  transition: ease-in 100ms;
+}
+
+.error {
+  color: #972a62;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .changePassContainer {
+    width: 100%;
+  }
+
+  .dietContainer {
+    width: 100%;
+  }
+}

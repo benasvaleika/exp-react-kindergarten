@@ -1,0 +1,31 @@
+.dropDown {
+  position: absolute;
+  top: 55px;
+  width: 250px;
+  transform: translateX(-85%);
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  padding: 0.5rem;
+  overflow: hidden;
+  z-index: 5;
+  border-radius: 7px;
+}
+
+.dropDown a {
+  border-bottom: 1px solid #eeeeee;
+  height: 25px;
+  display: flex;
+  align-self: center;
+  padding: 0.5rem;
+  transition: background 0.5s;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.dropDown a:last-of-type {
+  border-bottom: none;
+}
+
+.dropDown a:hover {
+  background-color: rgb(235, 235, 235);
+}

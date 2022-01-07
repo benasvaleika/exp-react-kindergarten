@@ -1,0 +1,50 @@
+.tableClass {
+  border-collapse: collapse;
+  margin: 25px 0;
+  border-radius: 7px 7px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+.tableClass thead tr {
+  background-color: #b63075;
+  font-weight: bold;
+  color: white;
+}
+
+.tableClass th,
+.tableClass td {
+  padding: 12px 15px;
+}
+
+.tableClass tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.tableClass tbody tr:nth-of-type(even) {
+  background-color: whitesmoke;
+}
+
+.tableClass tbody tr:last-of-type {
+  border-bottom: 3px solid #b63075;
+}
+
+.userName {
+  width: 15%;
+}
+
+.userDayToggle {
+  width: 10%;
+}
+
+.userMessage {
+  width: 75%;
+}
+
+@media only screen and (max-width: 700px) {
+  .tableClass th,
+  .tableClass td {
+    padding: 10px 10px;
+  }
+}

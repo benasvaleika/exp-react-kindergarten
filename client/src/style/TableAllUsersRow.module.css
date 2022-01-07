@@ -1,0 +1,25 @@
+.userName {
+  text-align: left;
+}
+
+.userName div {
+  margin-left: 18px;
+}
+
+.userRole {
+  text-align: center;
+}
+
+.binField {
+  text-align: right;
+}
+
+.bin {
+  margin-right: 35px;
+  cursor: pointer;
+}
+
+.bin:hover {
+  color: #b63075;
+  transition: ease-in 100ms;
+}

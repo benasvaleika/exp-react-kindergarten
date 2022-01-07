@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+  left: 15vw;
+  width: 70vw;
+}
+
+.weekdays {
+  display: flex;
+  width: 100%;
+}
+
+.weekdays div {
+  width: 9.5vw;
+  margin: 0 0.25vw;
+  padding-bottom: 20px;
+}
+
+.calendarBody {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.error {
+  color: #b63075;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    left: 2.5vw;
+    width: 95vw;
+  }
+
+  .weekdays div {
+    width: 13.5714vw;
+  }
+}

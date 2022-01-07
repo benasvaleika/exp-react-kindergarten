@@ -1,0 +1,27 @@
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.arrowLeft {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.arrowRight {
+  cursor: pointer;
+}
+
+.arrowLeft:hover,
+.arrowRight:hover {
+  color: #b63075;
+  transition: ease-in 100ms;
+}
+
+@media only screen and (max-width: 750px) {
+  h1 {
+    font-size: 27px;
+  }
+}

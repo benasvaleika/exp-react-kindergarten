@@ -1,0 +1,30 @@
+.window {
+  background-color: white;
+  width: 100%;
+  height: calc(90% - 33px);
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 7px 7px 0 0;
+  overflow-y: scroll;
+  border-bottom: #b63075 solid 3px;
+  border-top: #b63075 solid 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.contentContainer {
+  width: 94%;
+  margin: 10px 0 0 3%;
+  height: 90%;
+}
+
+.windowTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 900px) {
+  .window {
+    height: fit-content;
+    margin-bottom: 40px;
+  }
+}

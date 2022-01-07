@@ -1,0 +1,153 @@
+.tableClass {
+  border-collapse: collapse;
+  border-radius: 7px 7px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+.tableClass thead tr {
+  background-color: #b63075;
+  font-weight: bold;
+  color: white;
+  height: 30px;
+  text-align: center;
+}
+
+.tableClass td {
+  padding: 12px 15px;
+}
+
+.tableClass tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.tableClass tbody tr:nth-of-type(even) {
+  background-color: whitesmoke;
+}
+
+.tableClass tbody tr:last-of-type {
+  border-bottom: 3px solid #b63075;
+}
+
+.userName {
+  width: 20%;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.userRole {
+  width: 15%;
+}
+
+.userDelete {
+  width: 55%;
+  text-align: right;
+  padding-right: 30px;
+}
+
+/* Modal */
+
+.modalBg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 0;
+  top: 0;
+}
+
+.modalFront {
+  position: absolute;
+  background-color: white;
+  width: 400px;
+  max-width: 90%;
+  height: 150px;
+  border-bottom: #b63075 solid 3px;
+  border-top: #b63075 solid 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 7px 7px 0 0;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+}
+
+.modalContentContainer {
+  margin: 20px 4%;
+  width: 92%;
+}
+
+.modalTitle {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.modalBtnContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.modalBtnContainer button {
+  height: 30px;
+  width: 100px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cnlBtn {
+  background-color: white;
+  border: 2px solid #b63075;
+  color: #b63075;
+  border-radius: 5px;
+}
+
+.cfmBtn {
+  background-color: #b63075;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.cnlBtn:hover {
+  background-color: #b63075;
+  color: white;
+  transition: ease-in 100ms;
+}
+
+.cfmBtn:hover {
+  background-color: white;
+  color: #b63075;
+  border: 2px solid #b63075;
+  transition: ease-in 100ms;
+}
+
+@media only screen and (max-width: 900px) {
+  .tableClass {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .tableClass td {
+    padding: 12px 0;
+  }
+  .userName {
+    width: 20%;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .userRole {
+    width: 15%;
+  }
+
+  .userDelete {
+    width: 55%;
+    text-align: right;
+    padding-right: 10px;
+  }
+}

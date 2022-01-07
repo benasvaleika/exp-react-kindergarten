@@ -1,0 +1,57 @@
+.day {
+  width: 9.5vw;
+  margin: 0.25vw;
+  padding: 0.25vw;
+  height: 7vw;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: rgb(246, 250, 253);
+}
+
+.dayHeader {
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.dayBg {
+  width: 100%;
+  height: 80%;
+}
+
+.padding {
+  background-color: white !important;
+  cursor: unset !important;
+  box-shadow: none;
+}
+
+.weekendDay {
+  background-color: rgb(240, 240, 240);
+}
+
+.pastDay {
+  background-color: rgb(235, 245, 255);
+}
+
+.currentDay {
+  background-color: rgb(214, 232, 255);
+}
+
+.dayToggled {
+  background-color: rgb(255, 234, 237) !important;
+}
+
+@media only screen and (max-width: 900px) {
+  .day {
+    width: 13.0714vw;
+    height: 11vw;
+    padding: 3px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .dayHeader {
+    font-size: 12px;
+  }
+}

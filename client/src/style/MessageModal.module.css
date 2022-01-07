@@ -1,0 +1,110 @@
+.modalBackground {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+
+.modalFront {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  background-color: white;
+  width: 500px;
+  height: 265px;
+  transform: translate(-50%, -50%);
+  border-radius: 7px 7px 0 0;
+  border-top: #b63075 solid 30px;
+  border-bottom: #b63075 solid 3px;
+}
+
+.modalBodyContainer {
+  display: block;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalTitle {
+}
+
+.modalDeleteIcon {
+  color: #9c9c9c;
+  cursor: pointer;
+}
+
+.modalDeleteIcon:hover {
+  color: #b63075;
+  transition: ease-in 100ms;
+}
+
+.modalInput {
+  width: 100%;
+  padding-bottom: 70px;
+  font-size: 16px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.wordCount {
+  float: right;
+  font-size: 12px;
+}
+
+.modalBtnContainer {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+}
+
+.closeBtn {
+  margin-left: auto;
+  width: 90px;
+  height: 25px;
+  border: 2px solid #b63075;
+  color: #b63075;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.saveBtn {
+  margin-right: -0.5%;
+  width: 90px;
+  height: 25px;
+  margin-left: 15px;
+  background-color: #b63075;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  background-color: #b63075;
+  color: white;
+  transition: ease-in 100ms;
+}
+
+.saveBtn:hover {
+  background-color: white;
+  border: solid 2px #b63075;
+  color: #b63075;
+}
+
+@media only screen and (max-width: 600px) {
+  .modalFront {
+    width: 300px;
+  }
+}

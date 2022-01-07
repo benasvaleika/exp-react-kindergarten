@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  width: 100vw;
+  height: 70px;
+  background-color: #972a62;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 100%;
+  margin-left: 30px;
+}
+
+.fakeLogo {
+  color: white;
+  margin-left: 2rem;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+}
+
+.dropDownBtn {
+  margin-right: 30px;
+}
+
+.username {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 20px;
+  border-bottom: 1px white solid;
+}
+
+.error {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 45px;
+  }
+
+  .username {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+
+  .dropDownBtn {
+    margin-right: 10px;
+  }
+}
